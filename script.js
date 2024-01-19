@@ -1,5 +1,5 @@
 const toggle = document.getElementById('toggle');
-
+const bdayContainer = document.querySelector('.bday-container');
 
 toggle.addEventListener('change', () => {
     if (toggle.checked) {
