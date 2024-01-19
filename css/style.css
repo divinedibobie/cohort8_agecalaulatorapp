@@ -99,7 +99,9 @@
       transform: scale(0.5);
     }
   }
-
+  .bday-container {
+    display: none;
+}
   .toggle-container {
     display: flex;
     justify-content: center;
