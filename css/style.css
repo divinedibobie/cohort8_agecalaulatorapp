@@ -18,7 +18,7 @@
   body {
     display: flex;
     justify-content: center;
-    background-color: var(--Off-white);
+    background-image: url(./assets/images/bday-bg.jpg);
     align-items: center;
     min-height: 100vh;
   }
