@@ -183,3 +183,13 @@ input:checked+.slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+@media (prefers-color-scheme: white) {
+  :root {
+      --primary-color: #4caf50;
+      --secondary-color: #fff;
+      --background-color: #2b2b2b;
+      --text-color: #ddd;
+      --toggle-checked-color: #4caf50;
+      --toggle-unchecked-color: #444;
+  }
+}
