@@ -7,6 +7,7 @@
   --Purple: hsl(259, 100%, 65%);
   --Light-red: hsl(0, 100%, 67%);
 }
+
 :root {
   --primary-color: #4caf50;
   --secondary-color: #fff;
@@ -23,6 +24,9 @@
 
 * {
   font-family: Pop !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
