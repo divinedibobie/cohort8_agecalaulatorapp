@@ -29,7 +29,7 @@
 body {
   display: flex;
   justify-content: center;
-  
+  background-color: var(--Off-white);
   align-items: center;
   min-height: 100vh;
   background-color: var(--background-color);
@@ -44,8 +44,7 @@ body {
   padding: 30px;
   position: relative;
   border-bottom-right-radius: 150px;
-  box-shadow: 0px 0px 20px 1px #00000012;
-  height: 800%;
+  
 }
 
 input {
