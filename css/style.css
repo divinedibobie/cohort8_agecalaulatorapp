@@ -31,6 +31,9 @@ body {
   background-color: var(--Off-white);
   align-items: center;
   min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .container {
