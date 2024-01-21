@@ -38,12 +38,13 @@ body {
 }
 
 .container {
-  
+  background-color: var(--White);
   width: 420px;
   max-width: 80%;
   padding: 30px;
   position: relative;
   border-bottom-right-radius: 150px;
+  box-shadow: 0px 0px 20px 1px #00000012;
 }
 
 input {
