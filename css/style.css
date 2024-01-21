@@ -32,6 +32,7 @@
 body {
   display: flex;
   justify-content: center;
+  background-color: var(--Off-white);
   align-items: center;
   min-height: 100vh;
   background-color: var(--background-color);
