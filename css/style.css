@@ -24,7 +24,9 @@
 
 * {
   font-family: Pop !important;
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -39,8 +41,8 @@ body {
 
 .container {
   background-color: var(--White);
-  width: 600px;
-  max-width: 80%;
+  width: 420px;
+  max-width: 100%;
   padding: 30px;
   position: relative;
   border-bottom-right-radius: 150px;
