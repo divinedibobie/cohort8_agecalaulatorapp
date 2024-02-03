@@ -1,118 +1,10 @@
-
-
-/*
-INPUTS
-*/
-let isValid = false;
-
-const inputDay = document.querySelector("#day");
-const inputMonth = document.querySelector("#month");
-const inputYears = document.querySelector("#year");
-
-/*
-OUTPUT
-*/
-
-const errorsD = document.querySelector(".error-day");
-const errorsM = document.querySelector(".error-month");
-const errorsY = document.querySelector(".error-year");
-
-/*
-OUTPUT
-*/
-
-const outputDay = document.querySelector(".output-day");
-const outputMonth = document.querySelector(".output-month");
-const outputYears = document.querySelector(".output-year");
-
-const Btn = document.querySelector(".submit-btn");
-
-inputDay.addEventListener("input", (event) => {
-  if (inputDay.value > 31 || inputDay.value < 1) {
-    errorsD.textContent = "Invalid Date";
-    isValid = false;
-  } else {
-    isValid = true;
-    errorsD.textContent = "";
-  }
-});
-
-inputMonth.addEventListener("input", (event) => {
-  if (inputMonth.value > 12 || inputMonth.value < 1) {
-    errorsM.textContent = "Not a Valid Month";
-    isValid = false;
-  } else {
-    isValid = true;
-    errorsM.textContent = "";
-  }
-});
-
-inputYears.addEventListener("input", (event) => {
-  if (inputYears.value > 2023 || inputYears.value < 1) {
-    errorsY.textContent = "Invalid Year";
-    isValid = false;
-  } else {
-    isValid = true;
-    errorsY.textContent = "";
-  }
-});
-
-/*
-CALCULATOR
-*/
-
-function ageCalculator() {
-  const currentDate = new Date();
-
-  const currentDay = currentDate.getDate();
-  const currentMonth = currentDate.getMonth() + 1; // Months are zero-based
-  let currentYear = currentDate.getFullYear();
-
-  const birthDay = parseInt(inputDay.value, 10);
-  const birthMonth = parseInt(inputMonth.value, 10);
-  const birthYear = parseInt(inputYears.value, 10);
-
-  // Calculate days
-  let days = currentDay - birthDay;
-  if (days < 0) {
-    const daysInPreviousMonth = new Date(
-      currentYear,
-      currentMonth - 1,
-      0
-    ).getDate();
-    days += daysInPreviousMonth;
-    currentMonth -= 1;
-  }
-
-  // Calculate months
-  let months = currentMonth - birthMonth;
-  if (months < 0) {
-    months += 12;
-    currentYear -= 1;
-  }
-
-  // Calculate years
-  const years = currentYear - birthYear;
-
-  console.log(`Years: ${years}, Months: ${months}, Days: ${days}`);
-
-  outputDay.innerText = days;
-  outputMonth.innerText = months;
-  outputYears.innerText = years;
-
-  inputDay.value = "";
-  inputMonth.value = "";
-  inputYears.value = "";
-}
-
-Btn.addEventListener("click", ageCalculator);
-  
-  /*
-TOGGLE
-*/
 const toggle = document.getElementById('toggle');
 const container = document.querySelector('.container');
 const bdayContainer = document.querySelector('.bday-container');
+const ydigit = document.querySelector('.ydigit');
+const mdigit = document.querySelector('.mdigit');
+const ddigit = document.querySelector('.ddigit');
+
 toggle.addEventListener('change', () => {
     if (toggle.checked) {
         document.documentElement.style.setProperty('--primary-color', '#4caf50');
@@ -134,3 +26,56 @@ toggle.addEventListener('change', () => {
         
     }
 });
+
+const calculateAge = () => {
+    const days = document.getElementById('days').value;
+    const months = document.getElementById('months').value;
+    const years = document.getElementById('years').value;
+    const today = new Date();
+    const birthDate = new Date(years, months - 1, days);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    ydigit.textContent = age;
+    mdigit.textContent = today.getMonth() - birthDate.getMonth();
+    ddigit.textContent = today.getDate() - birthDate.getDate();
+
+    if (ddigit.textContent === '0') {
+        ddigit.textContent = '';
+    }
+
+    if (mdigit.textContent === '0') {
+        mdigit.textContent = '';
+    }
+
+    if (age < 0) {
+        alert('Please enter a valid birthdate.');
+    } else {
+        localStorage.setItem();
+    }
+};
+
+const daysInput = document.getElementById('days');
+const monthsInput = document.getElementById('months');
+const yearsInput = document.getElementById('years');
+
+daysInput.addEventListener('input', calculateAge);
+monthsInput.addEventListener('input', calculateAge);
+yearsInput.addEventListener('input', calculateAge);
+
+const savedAge = localStorage.getItem('age');
+if (savedAge) {
+    ydigit.textContent = savedAge;
+}
+function bDay(){
+    if(urMnth()==getCurMnth() && urDay()==getCurDay())
+        {
+            document.querySelector(".container").setAttribute("style","display:none");
+            document.querySelector(".bday-container").setAttribute("style","display:flex");
+            
+        }
+}
