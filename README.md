@@ -1,4 +1,8 @@
 # Frontend Mentor - Age calculator app
+![age](https://github.com/divinedibobie/cohort8_agecalaulatorapp/assets/152004472/adf37338-fd1d-4daf-82a5-cf0f8272fdf0)
+
+
+![age2](https://github.com/divinedibobie/cohort8_agecalaulatorapp/assets/152004472/104c3e5a-20bb-436a-ab4b-964b2c5ddc9b)
 
 ![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)
 
