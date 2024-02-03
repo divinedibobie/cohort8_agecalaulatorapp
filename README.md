@@ -110,7 +110,7 @@ Javascript, HTML, CSS...
 
 ## Got feedback for us?
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please reach out to us at phiona030303@gmail.com
+We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please reach out to us at https://github.com/divinedibobie
 
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
