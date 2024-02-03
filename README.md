@@ -1,4 +1,11 @@
-# Frontend Mentor - Age calculator app
+# Hi, We are Techies! 👋
+# Age calculator app
+This age calculator has been designed to calculate your current age based on the input provided in the ‘Date of Birth’ field. Alternatively, you can enter a date of your choice in the ‘Current Age or Age as of’ field to know your age at that particular point in time.
+
+![age3](https://github.com/Ayomii1/cohort8_agecalaulatorapp/assets/152004472/17d22a3d-3bba-4ca6-8d32-3595f52a7a2d)
+
+
+![age4](https://github.com/Ayomii1/cohort8_agecalaulatorapp/assets/152004472/0a71ee06-12e6-4ba6-9e0b-69db41730699)
 
 ![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)
 
@@ -26,7 +33,7 @@ Your users should be able to:
   - The date is in the future
   - The date is invalid e.g. 31/04/1991 (there are 30 days in April)
 - View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+- See hover and focus states for all interactive elements on the page.
 - **Bonus**: See the age numbers animate to their final number when the form is submitted
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
@@ -74,28 +81,36 @@ The template provides a guide for what to add. A custom `README` will help you e
 
 Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
 
-## Submitting your solution
+##🚀 About Me
+We are Frontend developers...
+## Acknowledgements
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+ 
+We would like to thank women techsters Tech4dev for their generous support and guidance that helped us through the development of this website.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+ Also, we acknowledge the great work and dedication of all the ladies in Group 3 whom without, this could not have been possible
 
-## Sharing your solution
 
-There are multiple places you can share your solution:
+## Authors
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+- Divine Dibobie (https://github.com/divinedibobie)
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+- Elizabeth Godfrey (https://github.com/miyemicodes)
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+- Zahidat Alao (https://github.com/Ayomii1)
+
+  ## Contributing
+
+Contributions are always welcome!
+
+
+## 🛠 Skills
+Javascript, HTML, CSS...
+
 
 ## Got feedback for us?
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please reach out to us at https://github.com/divinedibobie
 
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
