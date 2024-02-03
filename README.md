@@ -4,7 +4,8 @@ This age calculator has been designed to calculate your current age based on the
 
 ![age3](https://github.com/Ayomii1/cohort8_agecalaulatorapp/assets/152004472/17d22a3d-3bba-4ca6-8d32-3595f52a7a2d)
 
-![age2](https://github.com/divinedibobie/cohort8_agecalaulatorapp/assets/152004472/104c3e5a-20bb-436a-ab4b-964b2c5ddc9b)
+
+![age4](https://github.com/Ayomii1/cohort8_agecalaulatorapp/assets/152004472/0a71ee06-12e6-4ba6-9e0b-69db41730699)
 
 ![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)
 
