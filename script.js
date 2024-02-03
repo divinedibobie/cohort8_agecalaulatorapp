@@ -1,81 +1,107 @@
-const toggle = document.getElementById('toggle');
-const container = document.querySelector('.container');
-const bdayContainer = document.querySelector('.bday-container');
-const ydigit = document.querySelector('.ydigit');
-const mdigit = document.querySelector('.mdigit');
-const ddigit = document.querySelector('.ddigit');
 
-toggle.addEventListener('change', () => {
-    if (toggle.checked) {
-        document.documentElement.style.setProperty('--primary-color', '#4caf50');
-        document.documentElement.style.setProperty('--secondary-color', '#fff');
-        document.documentElement.style.setProperty('--background-color', '#2b2b2b');
-        document.documentElement.style.setProperty('--text-color', '#ddd');
-        document.documentElement.style.setProperty('--toggle-checked-color', '#4caf50');
-        document.documentElement.style.setProperty('--toggle-unchecked-color', '#444');
-        container.style.borderColor = '#4caf50';
-        
-    } else {
-        document.documentElement.style.setProperty('--primary-color', '#4caf50');
-        document.documentElement.style.setProperty('--secondary-color', '#fff');
-        document.documentElement.style.setProperty('--background-color', '#f5f5f5');
-        document.documentElement.style.setProperty('--text-color', '#333');
-        document.documentElement.style.setProperty('--toggle-checked-color', '#4caf50');
-        document.documentElement.style.setProperty('--toggle-unchecked-color', '#bbb');
-        container.style.borderColor = '#4caf50';
-        
-    }
+/*
+INPUTS
+*/
+let isValid = false;
+
+const inputDay = document.querySelector("#day");
+const inputMonth = document.querySelector("#month");
+const inputYears = document.querySelector("#year");
+
+/*
+OUTPUT
+*/
+
+const errorsD = document.querySelector(".error-day");
+const errorsM = document.querySelector(".error-month");
+const errorsY = document.querySelector(".error-year");
+
+/*
+OUTPUT
+*/
+
+const outputDay = document.querySelector(".output-day");
+const outputMonth = document.querySelector(".output-month");
+const outputYears = document.querySelector(".output-year");
+
+const Btn = document.querySelector(".submit-btn");
+
+inputDay.addEventListener("input", (event) => {
+  if (inputDay.value > 31 || inputDay.value < 1) {
+    errorsD.textContent = "Invalid Date";
+    isValid = false;
+  } else {
+    isValid = true;
+    errorsD.textContent = "";
+  }
 });
 
-const calculateAge = () => {
-    const days = document.getElementById('days').value;
-    const months = document.getElementById('months').value;
-    const years = document.getElementById('years').value;
-    const today = new Date();
-    const birthDate = new Date(years, months - 1, days);
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const monthDiff = today.getMonth() - birthDate.getMonth();
+inputMonth.addEventListener("input", (event) => {
+  if (inputMonth.value > 12 || inputMonth.value < 1) {
+    errorsM.textContent = "Not a Valid Month";
+    isValid = false;
+  } else {
+    isValid = true;
+    errorsM.textContent = "";
+  }
+});
 
-    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-    }
+inputYears.addEventListener("input", (event) => {
+  if (inputYears.value > 2023 || inputYears.value < 1) {
+    errorsY.textContent = "Invalid Year";
+    isValid = false;
+  } else {
+    isValid = true;
+    errorsY.textContent = "";
+  }
+});
 
-    ydigit.textContent = age;
-    mdigit.textContent = today.getMonth() - birthDate.getMonth();
-    ddigit.textContent = today.getDate() - birthDate.getDate();
+/*
+CALCULATOR
+*/
 
-    if (ddigit.textContent === '0') {
-        ddigit.textContent = '';
-    }
+function ageCalculator() {
+  const currentDate = new Date();
 
-    if (mdigit.textContent === '0') {
-        mdigit.textContent = '';
-    }
+  const currentDay = currentDate.getDate();
+  const currentMonth = currentDate.getMonth() + 1; // Months are zero-based
+  let currentYear = currentDate.getFullYear();
 
-    if (age < 0) {
-        alert('Please enter a valid birthdate.');
-    } else {
-        localStorage.setItem();
-    }
-};
+  const birthDay = parseInt(inputDay.value, 10);
+  const birthMonth = parseInt(inputMonth.value, 10);
+  const birthYear = parseInt(inputYears.value, 10);
 
-const daysInput = document.getElementById('days');
-const monthsInput = document.getElementById('months');
-const yearsInput = document.getElementById('years');
+  // Calculate days
+  let days = currentDay - birthDay;
+  if (days < 0) {
+    const daysInPreviousMonth = new Date(
+      currentYear,
+      currentMonth - 1,
+      0
+    ).getDate();
+    days += daysInPreviousMonth;
+    currentMonth -= 1;
+  }
 
-daysInput.addEventListener('input', calculateAge);
-monthsInput.addEventListener('input', calculateAge);
-yearsInput.addEventListener('input', calculateAge);
+  // Calculate months
+  let months = currentMonth - birthMonth;
+  if (months < 0) {
+    months += 12;
+    currentYear -= 1;
+  }
 
-const savedAge = localStorage.getItem('age');
-if (savedAge) {
-    ydigit.textContent = savedAge;
+  // Calculate years
+  const years = currentYear - birthYear;
+
+  console.log(`Years: ${years}, Months: ${months}, Days: ${days}`);
+
+  outputDay.innerText = days;
+  outputMonth.innerText = months;
+  outputYears.innerText = years;
+
+  inputDay.value = "";
+  inputMonth.value = "";
+  inputYears.value = "";
 }
-function bDay(){
-    if(urMnth()==getCurMnth() && urDay()==getCurDay())
-        {
-            document.querySelector(".container").setAttribute("style","display:none");
-            document.querySelector(".bday-container").setAttribute("style","display:flex");
-            
-        }
-}
+
+Btn.addEventListener("click", ageCalculator);
