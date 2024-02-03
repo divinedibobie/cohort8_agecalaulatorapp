@@ -1,4 +1,4 @@
-# Hi, We are Techies!
+# Hi, We are Techies! 👋
 # Age calculator app
 This age calculator has been designed to calculate your current age based on the input provided in the ‘Date of Birth’ field. Alternatively, you can enter a date of your choice in the ‘Current Age or Age as of’ field to know your age at that particular point in time.
 
