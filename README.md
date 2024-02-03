@@ -1,4 +1,5 @@
-# Frontend Mentor - Age calculator app
+# Hi, We are Techies!
+# Age calculator app
 ![age](https://github.com/divinedibobie/cohort8_agecalaulatorapp/assets/152004472/adf37338-fd1d-4daf-82a5-cf0f8272fdf0)
 
 
