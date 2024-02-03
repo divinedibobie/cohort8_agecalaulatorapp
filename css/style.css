@@ -173,16 +173,6 @@ hr {
     box-shadow: 1px 7px 20px 10px hsl(259deg 100% 65% / 13%);
 }
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 @media only screen and (max-width:1000px) {
 
     :root {
