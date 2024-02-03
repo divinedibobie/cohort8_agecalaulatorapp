@@ -111,8 +111,8 @@ Btn.addEventListener("click", ageCalculator);
 TOGGLE
 */
 const toggle = document.getElementById('toggle');
+const container = document.querySelector('.container');
 const bdayContainer = document.querySelector('.bday-container');
-
 toggle.addEventListener('change', () => {
     if (toggle.checked) {
         document.documentElement.style.setProperty('--primary-color', '#4caf50');
