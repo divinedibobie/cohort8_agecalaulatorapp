@@ -93,20 +93,15 @@ We would like to thank women techsters Tech4dev for their generous support and g
 
 ## Authors
 
-- Ibrahim Bilqees (https://github.com/Fabilqees)
+- Divine Dibobie (https://github.com/Fabilqees)
 
-- Marvellous Chirenje (https://github.com/Marchi135)
+- Elizabeth Godfrey (https://github.com/Marchi135)
 
-- Helen Oridupa (https://github.com/temlena)
+- Zahidat Alao (https://github.com/temlena)
 
   ## Contributing
 
 Contributions are always welcome!
-
-
-## Feedback
-
-If you have any feedback, please reach out to us at phiona030303@gmail.com
 
 
 ## 🛠 Skills
@@ -115,7 +110,7 @@ Javascript, HTML, CSS...
 
 ## Got feedback for us?
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please reach out to us at phiona030303@gmail.com
 
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
