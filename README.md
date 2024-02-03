@@ -81,7 +81,37 @@ The template provides a guide for what to add. A custom `README` will help you e
 
 Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
 
-#🚀 About Me
+##🚀 About Me
+We are Frontend developers...
+## Acknowledgements
+
+ 
+We would like to thank women techsters Tech4dev for their generous support and guidance that helped us through the development of this website.
+
+ Also, we acknowledge the great work and dedication of all the ladies in Group 3 whom without, this could not have been possible
+
+
+## Authors
+
+- Ibrahim Bilqees (https://github.com/Fabilqees)
+
+- Marvellous Chirenje (https://github.com/Marchi135)
+
+- Helen Oridupa (https://github.com/temlena)
+
+  ## Contributing
+
+Contributions are always welcome!
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at phiona030303@gmail.com
+
+
+## 🛠 Skills
+Javascript, HTML, CSS...
+
 
 ## Got feedback for us?
 
