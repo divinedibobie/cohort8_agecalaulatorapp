@@ -93,11 +93,11 @@ We would like to thank women techsters Tech4dev for their generous support and g
 
 ## Authors
 
-- Divine Dibobie (https://github.com/Fabilqees)
+- Divine Dibobie (https://github.com/divinedibobie)
 
-- Elizabeth Godfrey (https://github.com/Marchi135)
+- Elizabeth Godfrey (https://github.com/miyemicodes)
 
-- Zahidat Alao (https://github.com/temlena)
+- Zahidat Alao (https://github.com/Ayomii1)
 
   ## Contributing
 
